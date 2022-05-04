@@ -1,0 +1,26 @@
+{
+  "name": "homemap",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "大城小家"
+  },
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@ant-design/icons-vue": "^6.1.0",
+    "@types/leaflet": "^1.7.9",
+    "ant-design-vue": "^3.2.2",
+    "leaflet": "^1.8.0",
+    "leaflet.chinatmsproviders": "^3.0.6",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.5",
+    "vue-tsc": "^0.34.7"
+  }
+}
