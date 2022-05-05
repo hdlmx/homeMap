@@ -4,7 +4,18 @@ import {
   SettingOutlined,
   AreaChartOutlined
 } from '@ant-design/icons-vue';
-import {Layout, LayoutContent, LayoutFooter, LayoutHeader, Row, Col, Menu,SubMenu,MenuItem,MenuItemGroup} from 'ant-design-vue'
+import {
+  Layout,
+  LayoutContent,
+  LayoutFooter,
+  LayoutHeader,
+  Row,
+  Col,
+  Menu,
+  SubMenu,
+  MenuItem,
+  MenuItemGroup
+} from 'ant-design-vue'
 
 
 </script>
@@ -21,7 +32,7 @@ import {Layout, LayoutContent, LayoutFooter, LayoutHeader, Row, Col, Menu,SubMen
           <Menu theme="dark" :style="{'margin-right':'0px'}" mode="horizontal">
             <MenuItem key="analysisTask">
               <router-link to="/analysis">
-                <template #icon>
+                <template>
                   <mail-outlined/>
                 </template>
                 昆山区位
@@ -29,17 +40,17 @@ import {Layout, LayoutContent, LayoutFooter, LayoutHeader, Row, Col, Menu,SubMen
             </MenuItem>
             <MenuItem key="app">
               <router-link to="/house">
-                <template #icon>
+                <template>
                   <AreaChartOutlined/>
                 </template>
                 房势
               </router-link>
             </MenuItem>
             <SubMenu key="sub1">
-              <template #icon>
+              <template>
                 <setting-outlined/>
               </template>
-              <template #title>分析任务</template>
+              <template>分析任务</template>
               <MenuItemGroup title="Item 1">
                 <MenuItem key="setting:1">Option 1</MenuItem>
                 <MenuItem key="set ting:2">Option 2</MenuItem>
