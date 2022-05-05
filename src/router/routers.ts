@@ -40,7 +40,7 @@ class Route {
 }
 
 const homeRoute = new Route("/", 'home', '首页', Home)
-const analysisTaskRoute = new Route("/analysis", 'analysisTask', '分析任务', Analysis)
+const analysisTaskRoute = new Route("/analysis", 'analysis', '分析任务', Analysis)
 const wholeKunShanRoute = new Route("/whaleCity", 'whaleCity', '最全昆山', WholeKunShan)
 const resourceManagerRoute = new Route("/resource", 'resource', '资源管理', Resource)
 const houseRoute = new Route("/house", 'house', '房势', House)

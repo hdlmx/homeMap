@@ -1,5 +1,5 @@
 <template>
-  房势
+  <div>房势</div>
 </template>
 
 <script setup lang="ts">

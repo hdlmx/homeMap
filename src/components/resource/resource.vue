@@ -1,5 +1,5 @@
 <template>
-  资源管理
+  <div>资源管理</div>
 </template>
 
 <script setup lang="ts">

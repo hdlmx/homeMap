@@ -72,8 +72,8 @@ import {
     </LayoutHeader>
     <LayoutContent :style="{height:'100%'}">
       <router-view v-slot="{ Component, route }">
-        <transition :name="route.meta.transitionName">
-          <component :is="Component"/>
+        <transition name="fade" mode="out-in">
+          <component :is="Component"></component>
         </transition>
       </router-view>
     </LayoutContent>

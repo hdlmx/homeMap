@@ -1,6 +1,5 @@
 <template>
-  首页
-  <
+  <div>新闻</div>
 </template>
 
 <script setup lang="ts">
