@@ -15,11 +15,11 @@ const initMap = () => {
   }).then((AMap) => {
     map = new AMap.Map('map', {
       viewMode: "3D",
-      center: [121.053956, 31.31559],
+      center: [120.974177,31.341479],
       zoom: 17
     });
     const marker = new AMap.Marker({
-      position: [121.053956, 31.31559]
+      position: [120.974177,31.341479]
     });
     map.add(marker);
   }).catch(e => {
