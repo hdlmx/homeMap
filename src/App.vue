@@ -13,7 +13,7 @@ import {
     <a-layout-header>
       <a-row>
         <a-col class="head-title" :span="6">
-          <a-row :style="{margin:'0px'}">大城小家</a-row>
+          <a-row :style="{margin:'0px'}" > <h1 class="app-name">大城小家</h1></a-row>
         </a-col>
         <a-col :span="18">
           <a-menu theme="dark" :style="{'margin-right':'0px'}" mode="horizontal">
@@ -96,6 +96,13 @@ import {
 
 .site-layout-background {
   background: #fff;
+}
+.app-name{
+  background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 46px;
 }
 
 .head-title {
