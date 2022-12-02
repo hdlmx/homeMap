@@ -102,7 +102,8 @@ import {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 46px;
+  font-size: 42px;
+  font-weight: 900
 }
 
 .head-title {
@@ -123,5 +124,10 @@ import {
 .down-leave-to {
   transform: translate3d(0, 50%, 0);
   opacity: 0.2;
+}
+body {
+  --vt-font-family-base: Quotes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-rendering: unset!important;
+  font-synthesis: unset!important;
 }
 </style>
