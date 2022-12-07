@@ -6,6 +6,7 @@
 import AMapLoader from '@amap/amap-jsapi-loader';
 import config from "../../config/config"
 import {onMounted, reactive} from "vue";
+import http from "../../tools/http"
 
 const initMap = () => {
   AMapLoader.load({
@@ -15,20 +16,29 @@ const initMap = () => {
   }).then((AMap) => {
     map = new AMap.Map('map', {
       viewMode: "3D",
-      center: [120.974177,31.341479],
+      center: [121.134011, 31.291287],
       zoom: 17
     });
     const marker = new AMap.Marker({
-      position: [120.974177,31.341479]
+      position: [121.134011, 31.291287]
     });
     map.add(marker);
   }).catch(e => {
     console.log(e);
   })
 }
+/**
+ *获取系统设置里的地图中心点
+ */
+const getSystemMapCenter = () => {
+  http.get("/setting/mapCenter").then((res) => {
+    console.log(res.data)
+  })
+}
 let map = reactive<any>({});
 onMounted(() => {
   initMap();
+  getSystemMapCenter()
 })
 </script>
 

@@ -76,7 +76,7 @@ import {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0px;
+  margin-top: 0;
   height: 100%;
 
 }
@@ -99,7 +99,6 @@ import {
 }
 .app-name{
   background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 42px;
