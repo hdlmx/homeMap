@@ -31,7 +31,11 @@ const initMap = () => {
  *获取系统设置里的地图中心点
  */
 const getSystemMapCenter = () => {
-  http.get("/setting/mapCenter").then((res) => {
+  http.get("/setting/mapCenter", {
+    params: {
+      settingKey: "mapCenter"
+    }
+  }).then((res) => {
     console.log(res.data)
   })
 }

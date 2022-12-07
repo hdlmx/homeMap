@@ -1,4 +1,4 @@
-import axios, {AxiosPromise} from 'axios';
+import axios, {AxiosPromise, AxiosRequestConfig} from 'axios';
 
 //默认请求超时时间
 axios.defaults.timeout = 2000 * 1000;
@@ -43,14 +43,15 @@ export default {
     /**
      * get 请求
      * @param url 接口路由
+     * @param config 请求参数
      * @param auth 是否需要带登录信息
      * @returns AxiosPromise<any>
      */
-    get(url: string, auth = false): AxiosPromise<any> {
+    get(url: string, config?: AxiosRequestConfig, auth = false): AxiosPromise<any> {
         if (auth) {
             return axios.get(url, {headers: {Authorization: 'Your back-end user authenticates information'}});
         } else {
-            return axios.get(url);
+            return axios.get(url, config);
         }
     },
 
