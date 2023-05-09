@@ -36,7 +36,9 @@ const getSystemMapCenter = () => {
       settingKey: "mapCenter"
     }
   }).then((res) => {
-    console.log(res.data)
+    console.log(res.data.data)
+    let centerMapSettingJson: any = JSON.parse(res.data.data);
+    //let centerMapSetting: Setting = new Setting(res.data.data.id,);
   })
 }
 let map = reactive<any>({});
