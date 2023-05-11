@@ -3,80 +3,67 @@
 </script>
 
 <template>
-  <div class="common-layout">
+  <el-container style="width: 100%">
+    <el-header style="background: #503d2c;width: 100%;">
+      <el-container style="margin: 0;padding: 0">
+        <el-aside>
+          <el-row>
+            <el-col>
+              <el-row style="justify-content: start;display: flex;">
+                <el-col :span="8">logo</el-col>
+                <el-col :span="16" class="app-name">大城小家</el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+        </el-aside>
+        <el-main style="padding: 0">
+          <el-row>
+            <el-col>
+              <el-menu
+                  :default-active="activeIndex"
+                  mode="horizontal"
+                  @select="handleSelect"
+              >
+                <el-menu-item index="1">首页</el-menu-item>
+                <el-sub-menu index="2">
+                  <template #title>Workspace</template>
+                  <el-menu-item index="2-1">item one</el-menu-item>
+                  <el-menu-item index="2-2">item two</el-menu-item>
+                  <el-menu-item index="2-3">item three</el-menu-item>
+                  <el-sub-menu index="2-4">
+                    <template #title>item four</template>
+                    <el-menu-item index="2-4-1">item one</el-menu-item>
+                    <el-menu-item index="2-4-2">item two</el-menu-item>
+                    <el-menu-item index="2-4-3">item three</el-menu-item>
+                  </el-sub-menu>
+                </el-sub-menu>
+                <el-menu-item index="3">Info</el-menu-item>
+                <el-menu-item index="4">Orders</el-menu-item>
+              </el-menu>
+            </el-col>
+          </el-row>
+        </el-main>
+      </el-container>
+    </el-header>
     <el-container>
-      <el-header style="background: #2c3e50"></el-header>
+      <el-aside style="min-width: 200px" width="200"></el-aside>
       <el-container>
-        <el-aside style="background: aqua" width="200px">Aside</el-aside>
-        <el-container>
-          <el-main style="background: beige;">Main</el-main>
-          <el-footer style="background: #2c3e50">Footer</el-footer>
-        </el-container>
+        <el-main style="background: beige;">
+          <div style="width: 100%"></div>
+        </el-main>
+        <el-footer style="background: #2c3e50"></el-footer>
       </el-container>
     </el-container>
-  </div>
+  </el-container>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.app-name {
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 60px;
 }
 </style>
