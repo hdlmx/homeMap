@@ -4,7 +4,7 @@
       <img src="../../assets/car/01.jpg" class="car">
     </el-col>
     <el-col :span="6" style="height: 100%;">
-      <div id="mileage" ref="mileageDom" style="height: 100%;"></div>
+      <div id="mileage" ref="mileageDom" style="height:100%;"></div>
     </el-col>
     <el-col :span="6">
       faf
@@ -60,9 +60,7 @@ let mileage = reactive({// Make gradient line here
     {}
   ],
   grid: [
-    {
-      bottom: "60%"
-    }
+    {}
   ],
   series: [
     {
@@ -106,6 +104,7 @@ onMounted(() => {
 .car {
   width: 50%;
   height: 50%;
+  justify-self: end;
 }
 
 .car-cost {
