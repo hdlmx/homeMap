@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import AMapLoader from '@amap/amap-jsapi-loader';
-import config from "../../config/config"
+import config from "../../config/configt"
 import {onMounted, reactive} from "vue";
 import http from "../../tools/http"
 

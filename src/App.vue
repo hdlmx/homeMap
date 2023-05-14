@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AMapLoader from "@amap/amap-jsapi-loader";
 import config from "./config/configt";
-import { onMounted, reactive } from "vue";
+import {onMounted, reactive} from "vue";
 
 const initMap = () => {
   AMapLoader.load({
@@ -37,7 +37,7 @@ onMounted(() => {
             <el-col>
               <el-row style="justify-content: start;display: flex;">
                 <el-col :span="8">logo</el-col>
-                <el-col :span="16" class="app-name"><!--大城小家--></el-col>
+                <el-col :span="16" class="app-name">大城小家</el-col>
               </el-row>
             </el-col>
           </el-row>
@@ -46,13 +46,13 @@ onMounted(() => {
           <el-row>
             <el-col>
               <el-menu
-                :default-active="activeIndex"
-                mode="horizontal"
-                @select="handleSelect"
+                  :default-active="activeIndex"
+                  mode="horizontal"
+                  @select="handleSelect"
               >
                 <el-menu-item index="1">首页</el-menu-item>
                 <el-sub-menu index="2">
-                  <template #title>Workspace</template>
+                  <template #title>我的城市</template>
                   <el-menu-item index="2-1">item one</el-menu-item>
                   <el-menu-item index="2-2">item two</el-menu-item>
                   <el-menu-item index="2-3">item three</el-menu-item>
@@ -63,8 +63,8 @@ onMounted(() => {
                     <el-menu-item index="2-4-3">item three</el-menu-item>
                   </el-sub-menu>
                 </el-sub-menu>
-                <el-menu-item index="3">Info</el-menu-item>
-                <el-menu-item index="4">Orders</el-menu-item>
+                <el-menu-item index="3">家庭</el-menu-item>
+                <el-menu-item index="4">设置</el-menu-item>
               </el-menu>
             </el-col>
           </el-row>
