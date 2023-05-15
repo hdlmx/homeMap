@@ -20,6 +20,7 @@
     "echarts": "^5.4.2",
     "element-plus": "^2.3.4",
     "leaflet": "^1.9.3",
+    "lottie-web": "^5.11.0",
     "pinia": "^2.0.35",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
