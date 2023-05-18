@@ -1,12 +1,15 @@
 <script setup lang="ts">
 
 
+import MyDaughter from "@/views/index/MyDaughter.vue";
 </script>
 <template>
   <div>
     <el-row>
-      <el-col :span="6">出行</el-col>
-      <el-col :span="6">生活缴费</el-col>
+      <el-col :span="6">
+        <my-daughter />
+      </el-col>
+      <el-col :span="6"></el-col>
       <el-col :span="6">收入</el-col>
       <el-col :span="6">支出</el-col>
     </el-row>
