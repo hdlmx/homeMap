@@ -21,6 +21,7 @@
     "element-plus": "^2.3.4",
     "leaflet": "^1.9.3",
     "lottie-web": "^5.11.0",
+    "moment": "^2.29.4",
     "pinia": "^2.0.35",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
